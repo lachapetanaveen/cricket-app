@@ -1,0 +1,248 @@
+/* Netflex.css */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 60%;
+  text-align: center;
+
+
+}
+
+.card {
+  justify-content: center;
+  width: 18rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+/* Header.css */
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: lightgray;
+}
+/* Add these styles in a separate CSS file, e.g., header.css */
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+}
+
+/* Logo */
+.logo {
+  /* Add your logo styles here */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Modal */
+.modal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal_logo img {
+  width: 25%;
+  max-height: 100px;
+}
+
+.modal_close {
+  cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dropdown-menu-item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.dropdown-menu-item p {
+  margin-left: 12px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Add these styles in your CSS file */
+.logo {
+  /* Assuming the logo image has a square aspect ratio */
+  width: 60px; /* Adjust the width as needed */
+  height: 50px; /* Make sure the height matches the width */
+  border-radius: 55%; /* Make the image circular */
+  overflow: hidden; /* Ensure the image stays within the rounded boundary */
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the circular area */
+}
+/* Add these styles in your footer.css file */
+
+/* Footer Container */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  height: 40px;
+}
+
+/* Center items in the footer */
+.footer.items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Column Styles */
+.col-md-4 {
+  flex: 1;
+  max-width: 33.33%;
+  padding: 0 10px;
+}
+
+/* Copyright Text */
+.footer p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Social Icons */
+.iconsize {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+/* Make the icons responsive */
+@media (max-width: 768px) {
+  .iconsize {
+    font-size: 20px;
+  }
+}
+.blurred-backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(8px); /* Add the blur effect */
+  transition: backdrop-filter 0.3s ease-out; /* Add transition effect */
+}
